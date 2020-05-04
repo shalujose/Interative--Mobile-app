@@ -11,8 +11,8 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="centerCrop"
         android:contentDescription="coffee"
+        android:scaleType="centerCrop"
         app:srcCompat="@drawable/tease" />
 
     <TextView
@@ -25,7 +25,7 @@
         android:text="Quantity"
         android:textAllCaps="true"
         android:textColor="@android:color/white"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
     <TextView
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/textView"
         android:paddingStart="40dp"
-        android:paddingTop="10dp"
+        android:paddingTop="8dp"
         android:text="0"
         android:textColor="@android:color/white"
         android:textSize="20sp"
@@ -47,7 +47,7 @@
         android:layout_below="@id/textView2"
         android:background="#4A0404"
         android:paddingStart="20dp"
-        android:paddingTop="15dp"
+        android:paddingTop="17dp"
         android:paddingEnd="20dp"
         android:text="Order"
         android:textColor="@android:color/white"
@@ -62,6 +62,19 @@
         android:layout_marginStart="200dp"
         android:background="#CDBEBE"
         android:text="Click me"
-        android:textSize="24sp" />
-        <!--android:background="@android:color/primary_text_dark"-->
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="-90dp"
+        android:text="$0"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
 </RelativeLayout>

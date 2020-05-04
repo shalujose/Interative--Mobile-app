@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.text.NumberFormat;
+
 public class MainActivity extends AppCompatActivity {
 
     private Button button,order;
@@ -33,14 +35,24 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    
+
     public void submitOrder(View text){
-        display(1);
+        display(2);
+        displayPrice(2*15);
     }
 
     private void display(int orderNo) {
         TextView oderView =(TextView) findViewById(R.id.textView2);
         oderView.setText(""+orderNo);
+    }
+
+    /*private void priceDetails(View Text) {
+        displayPrice(2*15);
+    }*/
+
+    private void displayPrice(int coffeePrice) {
+        TextView priceView= (TextView) findViewById(R.id.textView3);
+        priceView.setText(NumberFormat.getCurrencyInstance().format(coffeePrice));
     }
 
     public void openSecondActivity(){
